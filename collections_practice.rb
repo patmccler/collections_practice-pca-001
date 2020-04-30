@@ -18,12 +18,23 @@ end
 
 # swap second and third elements
 def swap_elements array
-  temp = array[1]
-  array[1] = array[2]
-  array[2] = temp
+  # temp = array[1]
+  # array[1] = array[2]
+  # array[2] = temp
+
+  # array
+  swap_elements_from_to array, 1, 2
+end
+
+## Extra
+def swap_elements_from_to array, index, destination_index
+  temp = array[index]
+  array[index] = array[destination_index]
+  array[destination_index] = temp
 
   array
 end
+
 
 def reverse_array array
   new_array = []
