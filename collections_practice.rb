@@ -47,9 +47,10 @@ end
 
 # sum all the numbers
 def sum_array array
-  sum = 0
-  array.each {|elem| sum += elem}
-  sum
+  # sum = 0
+  # array.each {|elem| sum += elem}
+  # sum
+  array.inject {|sum, elem| sum += elem}
 end
 
 #add s to all but second element
